@@ -1,6 +1,6 @@
 import { describe, test, expect } from 'vitest';
 
-describe.skip('Dashboard', () => {
+describe('Dashboard', () => {
     test('Should create and export a code snippet with AskUI setup', async ({ aui }) => {
 
         //Make sure the browser window has focus
@@ -9,10 +9,10 @@ describe.skip('Dashboard', () => {
         // Open a new tab with keyboard shortcut
         await aui.pressTwoKeys('command', 't').exec();
 
-        // type snappify.io into browser bar
+        // type snappify.com into browser bar
         await aui.type('snappify.io').exec();
 
-        // press enter to open snappify.io
+        // press enter to open snappify.com
         await aui.pressKey('enter').exec();
 
         // load dashboard 
